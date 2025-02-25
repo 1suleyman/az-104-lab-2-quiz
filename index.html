@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure RBAC & Subscription Management Quiz</title>
+    <link rel="icon" href="./smile_927593.png">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            answer.style.display = answer.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>Pop Quiz: Validate Your Learning!</h1>
+        <p>Test yourself with these Yes or No questions to reinforce your understanding of Azure RBAC and Subscription Management.</p>
+
+        <!-- Section: Management Groups & Subscription Organization -->
+        <h2>Management Groups & Subscription Organization</h2>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q1')">Can a Management Group include multiple Azure Subscriptions? ▼</button>
+            <p class="answer" id="q1">✅ Yes</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q2')">Does the Root Management Group always contain all subscriptions? ▼</button>
+            <p class="answer" id="q2">✅ Yes</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q3')">Can RBAC permissions be assigned to a Management Group? ▼</button>
+            <p class="answer" id="q3">✅ Yes</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q4')">Does assigning an RBAC role at the Management Group level automatically apply it to all child subscriptions? ▼</button>
+            <p class="answer" id="q4">✅ Yes</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q5')">Can you create custom management groups for organizing subscriptions based on region or department? ▼</button>
+            <p class="answer" id="q5">✅ Yes</p>
+        </div>
+
+        <!-- Section: RBAC Role Assignments & Permissions -->
+        <h2>RBAC Role Assignments & Permissions</h2>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q6')">Can RBAC roles be assigned to both users and groups? ▼</button>
+            <p class="answer" id="q6">✅ Yes</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q7')">Is assigning RBAC roles to individual users recommended over assigning them to groups? ▼</button>
+            <p class="answer" id="q7">❌ No</p>
+        </div>
+
+        <!-- Section: Custom RBAC Roles & Permissions -->
+        <h2>Custom RBAC Roles & Permissions</h2>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q8')">Can you create a custom RBAC role without using JSON? ▼</button>
+            <p class="answer" id="q8">❌ No</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q9')">Are custom roles useful when built-in roles provide too many permissions? ▼</button>
+            <p class="answer" id="q9">✅ Yes</p>
+        </div>
+
+        <!-- Section: Activity Logs & Role Monitoring -->
+        <h2>Activity Logs & Role Monitoring</h2>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q10')">Do Activity Logs track role assignments and security changes in Azure? ▼</button>
+            <p class="answer" id="q10">✅ Yes</p>
+        </div>
+
+        <!-- Section: Azure RBAC vs. Microsoft Entra ID Roles -->
+        <h2>Azure RBAC vs. Microsoft Entra ID Roles</h2>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q11')">Is Azure RBAC used for managing Azure resources, while Microsoft Entra ID roles manage directory access? ▼</button>
+            <p class="answer" id="q11">✅ Yes</p>
+        </div>
+
+        <!-- Scoring Section -->
+        <div class="quiz-results">
+            <h3>How Did You Do?</h3>
+            <p>✅ <strong>14+ Correct:</strong> You're an Azure RBAC Pro! 🔥</p>
+            <p>✅ <strong>10-13 Correct:</strong> Great job! Keep refining your knowledge. 🚀</p>
+            <p>✅ <strong>Below 10:</strong> No worries—review the blog and retake the quiz! 💡</p>
+        </div>
+    </div>
+
+</body>
+</html>
